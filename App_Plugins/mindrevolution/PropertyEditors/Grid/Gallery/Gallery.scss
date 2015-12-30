@@ -1,0 +1,51 @@
+﻿.gallery-images {
+    display:block;
+
+    margin-bottom:25px;
+}
+
+.gallery-images:after {
+    clear:both;
+}
+
+.gallery-image {
+    display:block;
+    position:relative;
+
+    height:200px !important;
+    width:200px !important;
+
+    margin-right:5px;
+    margin-bottom:5px;
+
+    overflow:hidden;
+
+    img {
+        display:block;
+        width:100%;
+    }
+
+    .icon-delete {
+        position:absolute;
+        border-radius:20px;
+        border:1px solid #5F5F5F;
+        background-color:white;
+        color:#5F5F5F;
+        padding:6px;
+        bottom:10px;
+        right:10px;
+        width:20px;
+        height:20px;
+        cursor:pointer;
+    }
+}
+
+.gallery-image-add {
+    background-color:#e7e7e7;
+    cursor:pointer;
+
+    .icon-add {
+        color:#5F5F5F;
+        line-height:200px;
+    }
+}

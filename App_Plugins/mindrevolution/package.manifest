@@ -1,0 +1,19 @@
+﻿{
+  "gridEditors": [
+    {
+      "name": "Galerie",
+      "alias": "gallery",
+      "view": "/App_Plugins/mindrevolution/PropertyEditors/Grid/Gallery/Gallery.html",
+      //render": "/App_Plugins/mindrevolution/PropertyEditors/Grid/Gallery/Renderer.cshtml"
+      "icon": "icon-pictures-alt-2",
+      "config": {}
+    }
+  ],
+  "javascript": [
+    "/App_Plugins/mindrevolution/PropertyEditors/Grid/Gallery/angular-drag-and-drop-lists.min.js",
+    "/App_Plugins/mindrevolution/PropertyEditors/Grid/Gallery/Gallery.Controller.js"
+  ],
+  "css": [
+    "/App_Plugins/mindrevolution/PropertyEditors/Grid/Gallery/Gallery.min.css",
+  ]
+}

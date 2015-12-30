@@ -1,0 +1,31 @@
+﻿<div ng-controller="mindrevolution.PropertyEditors.Grid.Gallery.Controller">
+
+    <div ng-if="control.value && control.value.images">
+
+        <ul class="gallery-images" dnd-list="control.value.images">
+            <li class="gallery-image"
+                 ng-repeat="image in control.value.images"
+                 dnd-draggable="image"
+                 dnd-moved="control.value.images.splice($index, 1)"
+                 dnd-effect-allowed="move"
+                 ng-click="removeImage($index)">
+                <img ng-if="image.url"
+                     ng-src="{{thumbnailUrl(image.url)}}" />
+                <i class="icon icon-delete" title="Entfernen"></i>
+            </li>
+            <li class="gallery-image gallery-image-add" ng-click="addImages()">
+                <i class="icon icon-add" title="Galerie erweitern ..."></i>
+            </li>
+        </ul>
+
+    </div>
+
+
+
+    <div class="usky-editor-placeholder" ng-click="addImages()" ng-if="control.value === null">
+        <i class="icon icon-pictures-alt-2"></i>
+        <div ng-id="!control.$inserted" class="help-text"><localize key="mindrevolution_grid_clickToInsertGallery">Klicken, um Abbildungen zur Galerie hinzuzufügen ...</localize></div>
+    </div>
+
+</div>
+
